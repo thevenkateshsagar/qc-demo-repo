@@ -1,13 +1,20 @@
-name: Hello Github Actions workflow
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Hello GitHub Actions
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello
-        run: echo "Welcome to github actions!"
+      - name: Print Message
+        run: echo "Hello GitHub Actions 🚀"
+
+      - name: Print present working directory
+        run: pwd
+
+      - name: List files in the repository
+        run: ls -la
