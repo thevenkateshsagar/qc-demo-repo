@@ -1,0 +1,13 @@
+name: Hello Github Actions workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello
+        run: echo "Welcome to github actions!"
