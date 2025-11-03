@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: "18"
 
+      - name: verfiy node js installation
+        run: |
+          node -v
+          npm -v
+
       - name: Print Message
         run: echo "Hello GitHub Actions 🚀"
 
